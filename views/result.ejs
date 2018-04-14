@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> <%= response.name %> Weather Report</title>
+</head>
+<body>
+        <h3> <%= response.name %> Weather Report </h3>
+        <p>Current Temperature: &nbsp <%= response.main.temp %> </p>
+        <p>Current Pressure: &nbsp <%= response.main.pressure %> </p>
+        <p>Current Humidity: &nbsp <%= response.main.humidity %> </p>
+        <p>Daily Low: &nbsp <%= response.main.temp_min %> </p>
+        <p>Daily High: &nbsp <%= response.main.temp_max %> </p>
+</body>
+</html>
